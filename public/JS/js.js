@@ -1,4 +1,4 @@
-var myVar = setInterval(Timer, 500);
+//var myVar = setInterval(Timer, 500);
 
 //var socket = io.connect('http://localhost:8080', { 'forceNew': true });
 
