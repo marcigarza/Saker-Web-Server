@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
-var server = require('http').Server(app);
-var io = require('socket.io')(server);
+//var server = require('http').Server(app);
+//var io = require('socket.io')(server);
 
 var querystring = require('querystring');
 
@@ -62,6 +62,6 @@ app.post('/', function (req, res) {
 });
 
 
-server.listen(PORT, function() {
+app.listen(PORT, function() {
   console.log('Express Listening on port ' + PORT);
 });

@@ -1,6 +1,6 @@
 var myVar = setInterval(Timer, 500);
 
-var socket = io.connect('http://localhost:8080', { 'forceNew': true });
+//var socket = io.connect('http://localhost:8080', { 'forceNew': true });
 
 setTimeout(function(){
    window.location.reload(1);
