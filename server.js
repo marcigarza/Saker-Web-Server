@@ -11,6 +11,7 @@ var PORT = process.env.PORT || 8000;
 
 app.use(express.static(__dirname + '/public'));
 console.log("post received");
+var body;
 app.post('/', function (req, res) {
   req.on('data', function (data) {
     body += data;
