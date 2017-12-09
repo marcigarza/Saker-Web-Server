@@ -5,11 +5,11 @@ var postData = querystring.stringify({
     msg: '<root>Hello xml2js!</root>'
 });
 
-var body = '<module_2><radon>000000</radon><co2>11111111</co2><methane>2222222</methane></module_2>';
+var body = '<module_2><radon>nabo</radon><co2>funciona</co2><methane>puede</methane></module_2>';
 
 var options = {
-    hostname: 'jagjordi.xyz',
-    port: 8080,
+    hostname: 'saker.herokuapp.com',
+    port: 80,
     method: 'POST',
     headers: {
         'Content-Type': 'text/xml',

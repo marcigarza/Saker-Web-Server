@@ -1,11 +1,12 @@
 var myVar = setInterval(Timer, 500);
-var audio = new Audio('fart.mp3');
+
+var socket = io.connect('http://localhost:8080', { 'forceNew': true });
 
 setTimeout(function(){
    window.location.reload(1);
 }, 1000);
 
-function Timer() {
+function Timer(data) {
     //var d = new Date();
     //document.getElementById("demo").innerHTML = d.toLocaleTimeString();
     document.getElementById("radon_value_module_1").innerHTML = radon_value_module_1;
