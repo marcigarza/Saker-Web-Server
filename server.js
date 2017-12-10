@@ -5,27 +5,25 @@ var io = require('socket.io')(server);
 
 var PORT = process.env.PORT || 8000;
 
-var messages = [{
-  id: 1,
-  text: "Hola soy un mensaje",
-  author: "Carlos Azaustre"
-}];
 
 app.use(express.static(__dirname + '/public'));
 
-app.get('/hello', function(req, res) {
-  res.status(200).send("Hello World!");
-});
 
 io.on('connection', function(socket) {
   console.log('Alguien se ha conectado con Sockets');
-  socket.emit('messages', messages);
+});
 
-  socket.on('new-message', function(data) {
-    messages.push(data);
-
-    io.sockets.emit('messages', messages);
+app.post('/', function (req, res) {
+  req.on('data', function (data) {
+     var body = data;
   });
+
+  req.on('end', function () {
+    io.sockets.emit('messages', body);
+  });
+
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello World\n');
 });
 
 server.listen(PORT, function() {
