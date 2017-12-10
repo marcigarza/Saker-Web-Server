@@ -20,7 +20,7 @@ io.on('connection', function(socket) {
 app.post('/', function (req, res) {
   console.log("POST VEN A MI!")
   req.on('data', function (data) {
-     var body = querystring.parse(data);
+     body = querystring.parse(data);
      console.log("Enviando SOCKET con body:");
      console.log(body);
      io.sockets.emit('messages', body);
