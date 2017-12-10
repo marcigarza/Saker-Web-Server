@@ -1,6 +1,5 @@
 var socket = io.connect('https://saker.herokuapp.com/', { 'forceNew': true });
 
-var querystring = require('querystring');
 
 var radon_value_module_1 = " ";
 var co2_value_module_1 = " ";
@@ -16,9 +15,9 @@ socket.on('messages', function(data) {
 })
 
 function render (data) {
-  var post = querystring.parse(data);
+  //var post = querystring.parse(data);
   var parseString = require('xml2js').parseString;
-  var xml = post;
+  var xml = data;
   console.log("PRINT de XML despues del QueryString");
   console.log(xml);
   parseString(xml, function (err, result) {
