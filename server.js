@@ -24,9 +24,7 @@ io.on('connection', function(socket) {
 app.post('/', function (req, res) {
   console.log(req.body);
   console.log("POST VEN A MI!")
-  body = querystring.parse(req.body);
-  console.log("Enviando SOCKET con body:");
-  console.log(body);
+  body = req.body;
   io.sockets.emit('messages', body);
   /*
   req.on('data', function (data) {
