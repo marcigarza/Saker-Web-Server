@@ -18,6 +18,7 @@ app.post('/', function (req, res) {
   });
 
   req.on('end', function () {
+    /*
     var post = querystring.parse(body);
     var parseString = require('xml2js').parseString;
     var xml = body;
@@ -56,7 +57,9 @@ app.post('/', function (req, res) {
         });
       }
       console.log("The file was saved!");
+
     });
+    */
   });
   res.writeHead(200, {'Content-Type': 'text/plain'});
   res.end('Hello World\n');
