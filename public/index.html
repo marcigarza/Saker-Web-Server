@@ -1,21 +1,19 @@
-<html>
-  <head>
-    <title>Live Sensor Values</title>
-    <link rel="stylesheet"href="CSS/css.css">
-  </head>
-  <body>
-    <script src ="JS/js.js"></script>
-    <script src ="JS/module1.js"></script>
-    <script src ="JS/module2.js"></script>
-    <h2>Sensor Module 1<h2><hr>
-    <p> <h5>Radon Value: <span id="radon_value_module_1"></span>  <sup>Bq<sup>3</sup>/m<sup>3</sup></h5></p>
-    <p> <h5>CO2 Value: <span id="co2_value_module_1"></span>  ppm<h5></p>
-    <p> <h5>Methane Value: <span id="methane_value_module_1"></span>  ppm<h5></p>
-    <hr>
-    <h2>Sensor Module 2<h2><hr>
-    <p> <h5>Radon Value: <span id="radon_value_module_2"></span>  ppm<h5></p>
-    <p> <h5>CO2 Value: <span id="co2_value_module_2"></span>  ppm<h5></p>
-    <p> <h5>Methane Value: <span id="methane_value_module_2"></span>  ppm<h5></p>
-    <hr>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Aplicación con Sockets</title>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+  <h1>My App</h1>
+  <div id="messages"></div>
+  <br/>
+  <form onsubmit="return addMessage(this)">
+    <input type="text" id="username" placeholder="Tu Nombre" >
+    <input type="text" id="texto" placeholder="Cuéntanos algo...">
+    <input type="submit" value="Enviar!">
+  </form>
+</body>
 </html>

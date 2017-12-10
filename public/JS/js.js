@@ -1,20 +1,27 @@
-var myVar = setInterval(Timer, 500);
+var socket = io.connect('https://saker.herokuapp.com/', { 'forceNew': true });
 
-//var socket = io.connect('http://localhost:8080', { 'forceNew': true });
-/*
-setTimeout(function(){
-   window.location.reload(1);
-}, 1000);
-*/
-function Timer(data) {
-    //var d = new Date();
-    //document.getElementById("demo").innerHTML = d.toLocaleTimeString();
-    document.getElementById("radon_value_module_1").innerHTML = radon_value_module_1;
-    document.getElementById("co2_value_module_1").innerHTML = co2_value_module_1;
-    document.getElementById("methane_value_module_1").innerHTML = methane_value_module_1;
-    document.getElementById("radon_value_module_2").innerHTML = radon_value_module_2;
-    document.getElementById("co2_value_module_2").innerHTML = co2_value_module_2;
-    document.getElementById("methane_value_module_2").innerHTML = methane_value_module_2;
+socket.on('messages', function(data) {
+  console.log(data);
+  render(data);
+})
 
+function render (data) {
+  var html = data.map(function(elem, index) {
+    return(`<div>
+              <strong>${elem.author}</strong>:
+              <em>${elem.text}</em>
+            </div>`);
+  }).join(" ");
 
+  document.getElementById('messages').innerHTML = html;
+}
+
+function addMessage(e) {
+  var message = {
+    author: document.getElementById('username').value,
+    text: document.getElementById('texto').value
+  };
+
+  socket.emit('new-message', message);
+  return false;
 }
