@@ -19,6 +19,11 @@ io.on('connection', function(socket) {
 
 app.post('/', function (req, res) {
   console.log("POST VEN A MI!")
+  body = querystring.parse(req.body);
+  console.log("Enviando SOCKET con body:");
+  console.log(body);
+  io.sockets.emit('messages', body);
+  /*
   req.on('data', function (data) {
      body = querystring.parse(data);
      console.log("Enviando SOCKET con body:");
@@ -30,7 +35,7 @@ app.post('/', function (req, res) {
     console.log("Enviando SOCKET");
     io.sockets.emit('messages', body);
   });
-
+  */
   res.writeHead(200, {'Content-Type': 'text/plain'});
   res.end('Hello World\n');
 });
