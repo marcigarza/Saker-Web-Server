@@ -17,11 +17,13 @@ app.post('/', function (req, res) {
   console.log("POST VEN A MI!")
   req.on('data', function (data) {
      var body = data;
+     console.log("Enviando SOCKET con body:");
+     console.log(body);
+     io.sockets.emit('messages', body);
   });
 
   req.on('end', function () {
     console.log("Enviando SOCKET");
-    console.log(body);
     io.sockets.emit('messages', body);
   });
 
