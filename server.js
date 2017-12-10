@@ -14,6 +14,7 @@ io.on('connection', function(socket) {
 });
 
 app.post('/', function (req, res) {
+  System.out.println("TRATANDO POST");
   req.on('data', function (data) {
      var body = data;
   });
