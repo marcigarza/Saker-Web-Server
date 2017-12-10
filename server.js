@@ -20,6 +20,8 @@ app.post('/', function (req, res) {
   });
 
   req.on('end', function () {
+    console.log("Enviando SOCKET");
+    console.log(body);
     io.sockets.emit('messages', body);
   });
 

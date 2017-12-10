@@ -8,6 +8,7 @@ var co2_value_module_2 = " ";
 var methane_value_module_2 = " ";
 
 socket.on('messages', function(data) {
+  console.log("SOCKET VEN A MI!");
   console.log(data);
   render(data);
 })
