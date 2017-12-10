@@ -13,7 +13,7 @@ var PORT = process.env.PORT || 8000;
 
 app.use(express.static(__dirname + '/public'));
 
-app.use(require('connect').bodyParser());
+//app.use(require('connect').bodyParser());
 
 io.on('connection', function(socket) {
   console.log('Alguien se ha conectado con Sockets');
