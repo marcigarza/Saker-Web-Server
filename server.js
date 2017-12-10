@@ -3,6 +3,8 @@ var app = express();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
+var PORT = process.env.PORT || 8000;
+
 var messages = [{
   id: 1,
   text: "Hola soy un mensaje",
@@ -26,6 +28,6 @@ io.on('connection', function(socket) {
   });
 });
 
-server.listen(8080, function() {
+server.listen(PORT, function() {
   console.log("Servidor corriendo en https://saker.herokuapp.com/");
 });
