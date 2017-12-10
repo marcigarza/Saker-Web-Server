@@ -1,5 +1,4 @@
 var socket = io.connect('https://saker.herokuapp.com/', { 'forceNew': true });
-var myVar = setInterval(addMessage, 1000);
 
 var radon_value_module_1 = " ";
 var co2_value_module_1 = " ";
