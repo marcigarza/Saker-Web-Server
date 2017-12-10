@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
+var body;
 
 var PORT = process.env.PORT || 8000;
 
@@ -16,7 +17,7 @@ io.on('connection', function(socket) {
 app.post('/', function (req, res) {
   console.log("POST VEN A MI!")
   req.on('data', function (data) {
-     var body = data;
+     body = data;
      console.log("Enviando SOCKET con body:");
      console.log(body);
      io.sockets.emit('messages', body);

@@ -16,9 +16,13 @@ socket.on('messages', function(data) {
 function render (data) {
   var post = querystring.parse(data);
   var parseString = require('xml2js').parseString;
-  var xml = data;
+  var xml = post;
+  console.log("PRINT de XML despues del QueryString");
+  console.log(xml);
   parseString(xml, function (err, result) {
     //result is a JSON with all the data. {module_x {radon : [n],}}
+    console.log("PRINT de JSON despues del ParseString");
+    console.log(result);
     if (JSON.stringify(result.module_1) != undefined) {
       radon_value_module_1 = JSON.stringify(result.module_1.radon);
       co2_value_module_1 = JSON.stringify(result.module_1.co2);
