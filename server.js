@@ -9,7 +9,7 @@ var messages = [{
   author: "Carlos Azaustre"
 }];
 
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 app.get('/hello', function(req, res) {
   res.status(200).send("Hello World!");
