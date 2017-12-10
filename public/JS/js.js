@@ -16,7 +16,7 @@ socket.on('messages', function(data) {
 
 function render (data) {
   var result = JSON.parse(data);
-  var keys = Object.keys(data);
+  var keys = Object.keys(result);
   if (keys[0] == "module_1") {
     radon_value_module_1 = result[0].radon;
     co2_value_module_1 = result[0].co2;
