@@ -16,15 +16,17 @@ socket.on('messages', function(data) {
 
 function render (data) {
   var result = JSON.parse(data);
+  console.log(result);
   var keys = Object.keys(result);
+  console.log(keys);
   if (keys[0] == "module_1") {
-    radon_value_module_1 = result[0].radon;
-    co2_value_module_1 = result[0].co2;
-    methane_value_module_1 = result[0].methane;
+    radon_value_module_1 = result.module_1.radon;
+    co2_value_module_1 = result.module_1.co2;
+    methane_value_module_1 = result.module_1.methane;
   } else if (keys[0] == "module_2") {
-    radon_value_module_2 = result[0].radon;
-    co2_value_module_2 = result[0].co2;
-    methane_value_module_2 = result[0].methane;
+    radon_value_module_2 = result.module_2.radon;
+    co2_value_module_2 = result.module_2.co2;
+    methane_value_module_2 = result.module_2.methane;
   }
   /*
   if (JSON.stringify(result.module_1) != undefined) {
