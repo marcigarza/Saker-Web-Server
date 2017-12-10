@@ -1,5 +1,7 @@
 var socket = io.connect('https://saker.herokuapp.com/', { 'forceNew': true });
 
+var querystring = require('querystring');
+
 var radon_value_module_1 = " ";
 var co2_value_module_1 = " ";
 var methane_value_module_1 = " ";
