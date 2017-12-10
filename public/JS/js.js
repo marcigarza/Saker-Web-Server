@@ -17,7 +17,10 @@ socket.on('messages', function(data) {
 function render (data) {
   console.log("PRINT de XML despues del QueryString");
   console.log(data);
-  var result = xmlToJson(data);
+  var parser = new DOMParser();
+  var xml = parser.parseFromString(data, "text/xml");
+  console.log(data);
+  var result = xmlToJson(xml);
   //result is a JSON with all the data. {module_x {radon : [n],}}
   console.log("PRINT de JSON despues del ParseString");
   console.log(result);
