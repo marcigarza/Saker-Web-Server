@@ -5,7 +5,7 @@ var postData = querystring.stringify({
     msg: '<root>Hello xml2js!</root>'
 });
 
-var body = '<module_2><radon>nabo</radon><co2>funciona</co2><methane>puede</methane></module_2>';
+var body = '<module_2><radon>123</radon><co2>234</co2><methane>432</methane></module_2>';
 
 var options = {
     hostname: 'saker.herokuapp.com',

@@ -15,11 +15,18 @@ socket.on('messages', function(data) {
 })
 
 function render (data) {
-  console.log(data);
-  var result = data;
-  //result is a JSON with all the data. {module_x {radon : [n],}}
-  console.log("PRINT de JSON despues del ParseString");
-  console.log(result);
+  var result = JSON.parse(data);
+  var keys = Object.keys(data);
+  if (keys[0] == "module_1") {
+    radon_value_module_1 = result[0].radon;
+    co2_value_module_1 = result[0].co2;
+    methane_value_module_1 = result[0].methane;
+  } else if (keys[0] == "module_2") {
+    radon_value_module_2 = result[0].radon;
+    co2_value_module_2 = result[0].co2;
+    methane_value_module_2 = result[0].methane;
+  }
+  /*
   if (JSON.stringify(result.module_1) != undefined) {
     radon_value_module_1 = JSON.stringify(result.module_1.radon);
     co2_value_module_1 = JSON.stringify(result.module_1.co2);
@@ -30,7 +37,7 @@ function render (data) {
     co2_value_module_2 = JSON.stringify(result.module_2.co2);
     methane_value_module_2 = JSON.stringify(result.module_2.methane);
   }
-
+*/
   document.getElementById("radon_value_module_1").innerHTML = radon_value_module_1;
   document.getElementById("co2_value_module_1").innerHTML = co2_value_module_1;
   document.getElementById("methane_value_module_1").innerHTML = methane_value_module_1;
