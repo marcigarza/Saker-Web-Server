@@ -8,6 +8,11 @@ var gender        = 0;
 smoker_status = localStorage.getItem("smoker_status");
 age_group = localStorage.getItem("age_group");
 gender = localStorage.getItem("gender");
+localStorage.clear();
+
+if (smoker_status === null || age_group === null || gender === null) {
+	window.location.href = "main_circle.html";
+}
 /*
 smoker_status: 
 				1. current smoker
