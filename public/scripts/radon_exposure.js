@@ -55,6 +55,7 @@ function smoker(data) {
 	else {
 		return 0.11;
 	}
+	return 0;
 }
 
 function age(data) {
@@ -67,4 +68,5 @@ function age(data) {
 	else {
 		return 0.07;
 	}
+	return 0;
 }
