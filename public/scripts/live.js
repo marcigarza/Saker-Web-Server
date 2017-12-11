@@ -14,6 +14,9 @@ var radon_value_module_2 = " ";
 var co2_value_module_2 = " ";
 var methane_value_module_2 = " ";
 
+var bq = " bq/m3";
+var ppm = " ppm";
+
 socket.on('messages', function(data) {
   console.log("SOCKET VEN A MI!");
   console.log(data);
@@ -33,10 +36,10 @@ function render (data) {
     methane_value_module_2 = JSON.stringify(result.module_2.methane);
   }
 
-  document.getElementById(id_radon_value_module_1).innerHTML = radon_value_module_1;
-  document.getElementById(id_co2_value_module_1).innerHTML = co2_value_module_1;
-  document.getElementById(id_methane_value_module_1).innerHTML = methane_value_module_1;
-  document.getElementById(id_radon_value_module_2).innerHTML = radon_value_module_2;
-  document.getElementById(id_co2_value_module_2).innerHTML = co2_value_module_2;
-  document.getElementById(id_methane_value_module_2).innerHTML = methane_value_module_2;
+  document.getElementById(id_radon_value_module_1).innerHTML = radon_value_module_1 + bq;
+  document.getElementById(id_co2_value_module_1).innerHTML = co2_value_module_1 + ppm;
+  document.getElementById(id_methane_value_module_1).innerHTML = methane_value_module_1 + ppm;
+  document.getElementById(id_radon_value_module_2).innerHTML = radon_value_module_2 + bq;
+  document.getElementById(id_co2_value_module_2).innerHTML = co2_value_module_2 + ppm;
+  document.getElementById(id_methane_value_module_2).innerHTML = methane_value_module_2 + ppm;
 }
