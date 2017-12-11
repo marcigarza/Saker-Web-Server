@@ -1,24 +1,25 @@
-<manifest alg="2" build="2018.0.0.379" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="saker.cbi.org" resolutions="1x" timestamp="1512985975332">
+<manifest alg="2" build="2018.0.0.379" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="saker.cbi.org" resolutions="1x" timestamp="1513008366578">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
-    <file name="radon-map.css" crc="384317718" ref="radon-map"/>
-    <file name="sensitivity.css" crc="4099547613" ref="sensitivity"/>
-    <file name="main_circle.css" crc="4033298434" ref="main_circle"/>
-    <file name="radon-exposure.css" crc="3841170101" ref="radon-exposure"/>
-    <file name="live-measurements.css" crc="3981772540" ref="live-measurements"/>
+    <file name="live-measurements.css" crc="3767539519" ref="live-measurements"/>
     <file name="index.css" crc="114545845" ref="index"/>
+    <file name="sensitivity.css" crc="4167577677" ref="sensitivity"/>
+    <file name="main_circle.css" crc="3940415358" ref="main_circle"/>
+    <file name="radon-sensitivity.css" crc="4058927642" ref="radon-sensitivity"/>
+    <file name="radon-map.css" crc="384317718" ref="radon-map"/>
+    <file name="radon-exposure.css" crc="3811012391" ref="radon-exposure"/>
   </folder>
   <folder name="scripts">
-    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:main_circle:radon-map:live-measurements:sensitivity:radon-exposure"/>
-    <file name="museutils.js" crc="3803043152" ref="index:main_circle:radon-map:live-measurements:sensitivity:radon-exposure"/>
-    <file name="whatinput.js" crc="86476730" ref="index:main_circle:radon-map:live-measurements:sensitivity:radon-exposure"/>
-    <file name="museconfig.js" crc="4153641093" ref="index:main_circle:radon-map:live-measurements:sensitivity:radon-exposure"/>
-    <file name="jquery.watch.js" crc="99325471" ref="index:main_circle:radon-map:live-measurements:sensitivity:radon-exposure"/>
-    <file name="require.js" crc="4157109226" ref="index:main_circle:radon-map:live-measurements:sensitivity:radon-exposure"/>
-    <file name="webpro.js" crc="242022427" ref="radon-exposure"/>
-    <file name="musewpslideshow.js" crc="457073769" ref="radon-exposure"/>
-    <file name="jquery.museoverlay.js" crc="483674903" ref="radon-exposure"/>
-    <file name="touchswipe.js" crc="4066113679" ref="radon-exposure"/>
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:main_circle:radon-map:live-measurements:sensitivity:radon-sensitivity:radon-exposure"/>
+    <file name="museutils.js" crc="3803043152" ref="index:main_circle:radon-map:live-measurements:sensitivity:radon-sensitivity:radon-exposure"/>
+    <file name="whatinput.js" crc="86476730" ref="index:main_circle:radon-map:live-measurements:sensitivity:radon-sensitivity:radon-exposure"/>
+    <file name="museconfig.js" crc="4153641093" ref="index:main_circle:radon-map:live-measurements:sensitivity:radon-sensitivity:radon-exposure"/>
+    <file name="jquery.watch.js" crc="99325471" ref="index:main_circle:radon-map:live-measurements:sensitivity:radon-sensitivity:radon-exposure"/>
+    <file name="require.js" crc="4157109226" ref="index:main_circle:radon-map:live-measurements:sensitivity:radon-sensitivity:radon-exposure"/>
+    <file name="webpro.js" crc="242022427" ref="radon-sensitivity:radon-exposure"/>
+    <file name="musewpslideshow.js" crc="457073769" ref="radon-sensitivity:radon-exposure"/>
+    <file name="jquery.museoverlay.js" crc="483674903" ref="radon-sensitivity:radon-exposure"/>
+    <file name="touchswipe.js" crc="4066113679" ref="radon-sensitivity:radon-exposure"/>
   </folder>
   <folder name="images">
     <file name="pasted-svg-750x1334.svg" crc="523102274" seo="true" ref="index">
@@ -34,24 +35,19 @@
       <caption webpage="live-measurements" alt=""/>
     </file>
     <file name="pasted svg 118343x118_poster_.png" crc="4220061325" ref="main_circle"/>
-    <file name="pasted-svg-221126x31.svg" crc="68612785" seo="true" ref="main_circle">
-      <caption webpage="main_circle" alt=""/>
-    </file>
-    <file name="pasted svg 221126x31_poster_.png" crc="38930246" ref="main_circle"/>
     <file name="pasted-svg-340059x340.svg" crc="3894468625" seo="true" ref="main_circle:sensitivity">
       <caption webpage="main_circle" alt=""/>
       <caption webpage="sensitivity" alt=""/>
     </file>
     <file name="pasted svg 340059x340_poster_.png" crc="3823550038" ref="main_circle"/>
+    <file name="asset 8.png" crc="3961537863" seo="true" ref="main_circle">
+      <caption webpage="main_circle" alt=""/>
+    </file>
     <file name="pasted-svg-118343x1182.svg" crc="3871107737" seo="true" ref="main_circle:radon-map">
       <caption webpage="main_circle" alt=""/>
       <caption webpage="radon-map" alt=""/>
     </file>
     <file name="pasted svg 118343x118_poster_2.png" crc="480616934" ref="main_circle"/>
-    <file name="pasted-svg-13101x31.svg" crc="4186280436" seo="true" ref="main_circle">
-      <caption webpage="main_circle" alt=""/>
-    </file>
-    <file name="pasted svg 13101x31_poster_.png" crc="4283568933" ref="main_circle"/>
     <file name="pasted-svg-283434x45.svg" crc="137549228" seo="true" ref="radon-map">
       <caption webpage="radon-map" alt=""/>
     </file>
@@ -60,16 +56,20 @@
       <caption webpage="radon-map" alt=""/>
     </file>
     <file name="pasted svg 730972x388_poster_.png" crc="241347244" ref="radon-map"/>
-    <file name="cactus.jpg" crc="3936421572" seo="true" ref="radon-exposure">
+    <file name="cactus604x453.jpg" crc="48645786" seo="true" ref="radon-sensitivity">
+      <caption webpage="radon-sensitivity" alt=""/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="radon-sensitivity:radon-exposure"/>
+    <file name="loading.gif" crc="3815509949" ref="radon-sensitivity:radon-exposure"/>
+    <file name="cactus-crop-u923.jpg" crc="4072877013" seo="true" ref="radon-exposure">
       <caption webpage="radon-exposure" alt=""/>
     </file>
-    <file name="blank.gif" crc="4208392903" ref="radon-exposure"/>
-    <file name="loading.gif" crc="3815509949" ref="radon-exposure"/>
   </folder>
   <file name="index.html" crc="215264676" seo="true" mt="1512825612904" redirect="true"/>
-  <file name="main_circle.html" crc="4196013894" seo="true" mt="1512826598944" redirect="true"/>
+  <file name="main_circle.html" crc="4233522685" seo="true" mt="1513008349451" redirect="true"/>
   <file name="radon-map.html" crc="499705472" seo="true" mt="1512826642114" redirect="true"/>
-  <file name="live-measurements.html" crc="266441988" seo="true" mt="1512983748497" redirect="true"/>
-  <file name="sensitivity.html" crc="3837353363" seo="true" mt="1512985676036" redirect="true"/>
-  <file name="radon-exposure.html" crc="119040685" seo="true" mt="1512985877073" redirect="true"/>
+  <file name="live-measurements.html" crc="251395764" seo="true" mt="1512983748497" redirect="true"/>
+  <file name="sensitivity.html" crc="389152521" seo="true" mt="1513007297999" redirect="true"/>
+  <file name="radon-sensitivity.html" crc="196487893" seo="true" mt="1513007298000" redirect="true"/>
+  <file name="radon-exposure.html" crc="4278523165" seo="true" mt="1513007814903" redirect="true"/>
 </manifest>

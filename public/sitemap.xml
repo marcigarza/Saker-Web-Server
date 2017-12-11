@@ -14,23 +14,20 @@
   </url>
   <url>
     <loc>http://saker.cbi.org/main_circle.html</loc>
-    <lastmod>2017-12-09</lastmod>
+    <lastmod>2017-12-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>http://saker.cbi.org/images/pasted-svg-118343x118.svg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>http://saker.cbi.org/images/pasted-svg-221126x31.svg</image:loc>
-    </image:image>
-    <image:image>
       <image:loc>http://saker.cbi.org/images/pasted-svg-340059x340.svg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>http://saker.cbi.org/images/pasted-svg-118343x1182.svg</image:loc>
+      <image:loc>http://saker.cbi.org/images/asset%208.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>http://saker.cbi.org/images/pasted-svg-13101x31.svg</image:loc>
+      <image:loc>http://saker.cbi.org/images/pasted-svg-118343x1182.svg</image:loc>
     </image:image>
   </url>
   <url>
@@ -67,12 +64,21 @@
     </image:image>
   </url>
   <url>
+    <loc>http://saker.cbi.org/radon-sensitivity.html</loc>
+    <lastmod>2017-12-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://saker.cbi.org/images/cactus604x453.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>http://saker.cbi.org/radon-exposure.html</loc>
     <lastmod>2017-12-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <image:image>
-      <image:loc>http://saker.cbi.org/images/cactus.jpg</image:loc>
+      <image:loc>http://saker.cbi.org/images/cactus-crop-u923.jpg</image:loc>
     </image:image>
   </url>
 </urlset>

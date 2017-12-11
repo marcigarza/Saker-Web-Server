@@ -4,83 +4,58 @@
 
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
   <meta name="generator" content="2018.0.0.379"/>
-  <script src="/socket.io/socket.io.js"></script>
-  <script src ="scripts/live.js"></script>
+  
   <script type="text/javascript">
    // Update the 'nojs'/'js' class on the html node
 document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
 
 // Check that all required assets are uploaded and up-to-date
-if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.watch.js", "require.js", "live-measurements.css"], "outOfDate":[]};
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.watch.js", "require.js", "webpro.js", "musewpslideshow.js", "jquery.museoverlay.js", "touchswipe.js", "radon-sensitivity.css"], "outOfDate":[]};
 </script>
   
-  <title>Live Measurements</title>
+  <title>Radon Sensitivity</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=444006867"/>
-  <link rel="stylesheet" type="text/css" href="css/live-measurements.css?crc=3767539519" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/radon-sensitivity.css?crc=4058927642" id="pagesheet"/>
    </head>
  <body>
 
   <div class="clearfix" id="page"><!-- column -->
    <div class="position_content" id="page_position_content">
-    <div class="browser_width colelem" id="u313-bw">
-     <div id="u313"><!-- group -->
-      <div class="clearfix" id="u313_align_to_page">
-       <div class="clearfix grpelem" id="pu725-4"><!-- column -->
-        <div class="clearfix colelem" id="u725-4"><!-- content -->
-         <p>SENSOR 1</p>
-        </div>
-        <div class="clearfix colelem" id="pu686"><!-- group -->
-         <div class="grpelem" id="u686" style= "font-size: 24px; text-align: center; vertical-align: middle; padding-top: 30px;"><!-- simple frame --></div>
-         <div class="clearfix grpelem" id="u698-4"><!-- content -->
-          <p>RADON</p>
+    <div class="browser_width colelem" id="u440-bw">
+     <div id="u440"><!-- group -->
+      <div class="clearfix" id="u440_align_to_page">
+       <div class="clearfix grpelem" id="pu436"><!-- column -->
+        <div class="clearfix colelem" id="u436"><!-- group -->
+         <div class="clearfix grpelem" id="u437"><!-- group -->
+          <div class="clearfix grpelem" id="u438-4"><!-- content -->
+           <p>Radon Sensitivity</p>
+          </div>
          </div>
         </div>
-        <div class="clearfix colelem" id="pu692"><!-- group -->
-         <div class="grpelem" id="u692" style= "font-size: 24px; text-align: center; vertical-align: middle; padding-top: 30px;"><!-- simple frame --></div>
-         <div class="clearfix grpelem" id="u701-4"><!-- content -->
-          <p>METHANE</p>
-         </div>
+        <div class="clearfix colelem" id="u760-4"><!-- content -->
+         <p>YOUR RADON SENSITIVITY</p>
         </div>
-        <div class="clearfix colelem" id="pu695"><!-- group -->
-         <div class="grpelem" id="u695"style= "font-size: 24px; text-align: center; vertical-align: middle; padding-top: 30px;"><!-- simple frame --></div>
-         <div class="clearfix grpelem" id="u704-4"><!-- content -->
-          <p>CARBON MONOXIDE</p>
-         </div>
+        <div class="colelem" id="u758" style= "font-size: 34px; text-align: center; vertical-align: middle; padding-top: 40px;"><!-- simple frame --></div>
+        <div class="clearfix colelem" id="u767-4"><!-- content -->
+         <p>RELATIVE RISK PROFILE</p>
         </div>
-       </div>
-       <div class="clip_frame grpelem" id="u316"><!-- svg -->
-        <img class="svg" id="u323" src="images/pasted-svg-118343x118.svg?crc=376750153" width="245" height="237" alt="" data-mu-svgfallback="images/pasted%20svg%20118343x118_poster_.png?crc=4220061325"/>
-       </div>
-       <div class="clearfix grpelem" id="pu728-4"><!-- column -->
-        <div class="clearfix colelem" id="u728-4"><!-- content -->
-         <p>SENSOR 2</p>
-        </div>
-        <div class="clearfix colelem" id="pu707"><!-- group -->
-         <div class="grpelem" id="u707" style= "font-size: 24px; text-align: center; vertical-align: middle; padding-top: 30px;"><!-- simple frame --></div>
-         <div class="clearfix grpelem" id="u710-4"><!-- content -->
-          <p>RADON</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu708"><!-- group -->
-         <div class="grpelem" id="u708" style= "font-size: 24px; text-align: center; vertical-align: middle; padding-top: 30px;"><!-- simple frame --></div>
-         <div class="clearfix grpelem" id="u711-4"><!-- content -->
-          <p>METHANE</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu709"><!-- group -->
-         <div class="grpelem" id="u709"style= "font-size: 24px; text-align: center; vertical-align: middle; padding-top: 30px;"><!-- simple frame --></div>
-         <div class="clearfix grpelem" id="u712-4"><!-- content -->
-          <p>CARBON MONOXIDE</p>
+        <div class="SlideShowWidget clearfix colelem" id="slideshowu770"><!-- none box -->
+         <div class="popup_anchor" id="u781popup">
+          <div class="SlideShowContentPanel clearfix" id="u781"><!-- stack box -->
+           <div class="SSSlide clip_frame clearfix grpelem" id="u782"><!-- image -->
+            <img class="ImageInclude position_content" id="u782_img"  src="" alt="" data-width="604" data-height="453"/>
+           </div>
+          </div>
          </div>
         </div>
        </div>
-       <a class="nonblock nontext grpelem" id="u583" href="main_circle.html"><!-- simple frame --></a>
+       <a class="nonblock nontext grpelem" id="u589" href="sensitivity.html"><!-- simple frame --></a>
       </div>
      </div>
     </div>
-    <div class="browser_width colelem" id="u312-bw">
-     <div id="u312"><!-- simple frame --></div>
+    <div class="browser_width colelem" id="u439-bw">
+     <div id="u439"><!-- simple frame --></div>
     </div>
    </div>
   </div>
@@ -95,13 +70,14 @@ var suppressMissingFileError = false
 l[1]:null,l=l&&l[2]?l[2]:null;switch(l.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");f.className+=" "+k;k=a(c(f,"color"));l=a(c(f,"backgroundColor"));k!=0||l!=0?(Muse.assets.required.splice(h,1),"undefined"!=typeof b[i]&&(k!=b[i]>>>24||l!=(b[i]&16777215))&&Muse.assets.outOfDate.push(i)):h++;f.className="version";break;case "js":h++;break;default:throw Error("Unsupported file type: "+l);}}d?d().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
 f.parentNode.removeChild(f);if(Muse.assets.outOfDate.length||Muse.assets.required.length)f="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",g&&Muse.assets.outOfDate.length&&(f+="\nOut of date: "+Muse.assets.outOfDate.join(",")),g&&Muse.assets.required.length&&(f+="\nMissing: "+Muse.assets.required.join(",")),suppressMissingFileError?(f+="\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.",console.log(f)):alert(f)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?
 setTimeout(function(){g(!0)},5E3):g()}};
-var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.watch"],function(d){var $ = d;$(document).ready(function(){try{
+var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","webpro","musewpslideshow","jquery.museoverlay","touchswipe","jquery.watch"],function(d){var $ = d;$(document).ready(function(){try{
 window.Muse.assets.check($);/* body */
 Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
 Muse.Utils.prepHyperlinks(true);/* body */
 Muse.Utils.resizeHeight('.browser_width');/* resize height */
 Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
 Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
+Muse.Utils.initWidget('#slideshowu770', ['#bp_infinity'], function(elem) { var widget = new WebPro.Widget.ContentSlideShow(elem, {autoPlay:true,displayInterval:3500,slideLinkStopsSlideShow:false,transitionStyle:'fading',lightboxEnabled_runtime:false,shuffle:false,transitionDuration:500,enableSwipe:true,elastic:'off',resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false,isResponsive:false}); $(elem).data('widget', widget); return widget; });/* #slideshowu770 */
 Muse.Utils.showWidgetsWhenReady();/* body */
 Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
 }catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
@@ -109,5 +85,7 @@ Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
 </script>
   <!-- RequireJS script -->
   <script src="scripts/require.js?crc=4157109226" type="text/javascript" async data-main="scripts/museconfig.js?crc=4153641093" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
+  <script src="scripts/radon_sensitivity.js"></script>
+   </body>
    </body>
 </html>

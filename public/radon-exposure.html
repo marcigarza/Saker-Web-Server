@@ -4,6 +4,7 @@
 
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
   <meta name="generator" content="2018.0.0.379"/>
+  
   <script type="text/javascript">
    // Update the 'nojs'/'js' class on the html node
 document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
@@ -15,46 +16,54 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <title>Radon Exposure</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=444006867"/>
-  <link rel="stylesheet" type="text/css" href="css/radon-exposure.css?crc=3841170101" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/radon-exposure.css?crc=3811012391" id="pagesheet"/>
    </head>
  <body>
 
   <div class="clearfix" id="page"><!-- column -->
    <div class="position_content" id="page_position_content">
-    <div class="browser_width colelem" id="u440-bw">
-     <div id="u440"><!-- group -->
-      <div class="clearfix" id="u440_align_to_page">
-       <div class="clearfix grpelem" id="pu436"><!-- column -->
-        <div class="clearfix colelem" id="u436"><!-- group -->
-         <div class="clearfix grpelem" id="u437"><!-- group -->
-          <div class="clearfix grpelem" id="u438-4"><!-- content -->
+    <div class="browser_width colelem" id="u929-bw">
+     <div id="u929"><!-- group -->
+      <div class="clearfix" id="u929_align_to_page">
+       <div class="clearfix grpelem" id="pu933"><!-- column -->
+        <div class="clearfix colelem" id="u933"><!-- group -->
+         <div class="clearfix grpelem" id="u935"><!-- group -->
+          <div class="clearfix grpelem" id="u934-4"><!-- content -->
            <p>Radon Exposure</p>
           </div>
          </div>
         </div>
-        <div class="clearfix colelem" id="u760-4"><!-- content -->
-         <p>YOUR RADON SENSITIVITY</p>
+        <div class="clearfix colelem" id="u928-4"><!-- content -->
+         <p>CHOOSE A PROFILE</p>
         </div>
-        <div class="colelem" id="u758" style= "font-size: 34px; text-align: center; vertical-align: middle; padding-top: 40px;" ><!-- simple frame --></div>
-        <div class="clearfix colelem" id="u767-4"><!-- content -->
-         <p>YOUR PERSONAL EXPOSURE</p>
+        <div class="colelem" id="u911"><select id = "profile_selection" name="filter" style="height: 100%; width: 100%;">
+                                          <option value = "0">Choose one Profile</option>
+                                          <option value = "1">Alicia - 35y, Female, Smoker</option>
+                                          <option value = "2">Gema - 30y, Female, Non-Smoker</option>
+                                          <option value = "3">Hans - 65y, Male, Non-Smoker</option>
+                                          <option value = "4">Ricky - 55y, Male, Smoker</option>
+                                        </select>
+
+          <!-- simple frame --></div>
+        <div class="clearfix colelem" id="u931-4"><!-- content -->
+         <p>RADON DAY TRACKING</p>
         </div>
-        <div class="SlideShowWidget clearfix colelem" id="slideshowu770"><!-- none box -->
-         <div class="popup_anchor" id="u781popup">
-          <div class="SlideShowContentPanel clearfix" id="u781"><!-- stack box -->
-           <div class="SSSlide clip_frame grpelem" id="u782"><!-- image -->
-            <img class="block ImageInclude" id="u782_img" src="" alt="" data-width="480" data-height="360"/>
+        <div class="SlideShowWidget clearfix colelem" id="slideshowu912"><!-- none box -->
+         <div class="popup_anchor" id="u922popup">
+          <div class="SlideShowContentPanel clearfix" id="u922"><!-- stack box -->
+           <div class="SSSlide clip_frame grpelem" id="u923"><!-- image -->
+            <img class="block ImageInclude" id="u923_img"  src="" alt="" width="604" height="390"/>
            </div>
           </div>
          </div>
         </div>
        </div>
-       <a class="nonblock nontext grpelem" id="u589" href="main_circle.html"><!-- simple frame --></a>
+       <a class="nonblock nontext grpelem" id="u932" href="sensitivity.html"><!-- simple frame --></a>
       </div>
      </div>
     </div>
-    <div class="browser_width colelem" id="u439-bw">
-     <div id="u439"><!-- simple frame --></div>
+    <div class="browser_width colelem" id="u930-bw">
+     <div id="u930"><!-- simple frame --></div>
     </div>
    </div>
   </div>
@@ -76,7 +85,7 @@ Muse.Utils.prepHyperlinks(true);/* body */
 Muse.Utils.resizeHeight('.browser_width');/* resize height */
 Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
 Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
-Muse.Utils.initWidget('#slideshowu770', ['#bp_infinity'], function(elem) { var widget = new WebPro.Widget.ContentSlideShow(elem, {autoPlay:true,displayInterval:3500,slideLinkStopsSlideShow:false,transitionStyle:'fading',lightboxEnabled_runtime:false,shuffle:false,transitionDuration:500,enableSwipe:true,elastic:'off',resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false,isResponsive:false}); $(elem).data('widget', widget); return widget; });/* #slideshowu770 */
+Muse.Utils.initWidget('#slideshowu912', ['#bp_infinity'], function(elem) { var widget = new WebPro.Widget.ContentSlideShow(elem, {autoPlay:true,displayInterval:3500,slideLinkStopsSlideShow:false,transitionStyle:'fading',lightboxEnabled_runtime:false,shuffle:false,transitionDuration:500,enableSwipe:true,elastic:'off',resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false,isResponsive:false}); $(elem).data('widget', widget); return widget; });/* #slideshowu912 */
 Muse.Utils.showWidgetsWhenReady();/* body */
 Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
 }catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
@@ -84,6 +93,8 @@ Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
 </script>
   <!-- RequireJS script -->
   <script src="scripts/require.js?crc=4157109226" type="text/javascript" async data-main="scripts/museconfig.js?crc=4153641093" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
+  
   <script src="scripts/radon_exposure.js"></script>
+  
    </body>
 </html>
