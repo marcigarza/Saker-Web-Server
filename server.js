@@ -16,9 +16,13 @@ app.use(bodyParser.xml());
 app.use(express.static(__dirname + '/public'));
 
 
+var message_1 = { module_1:  { radon: [ '00.00' ],   co2: [ '00.00' ], methane: [ '00.00' ] } };
+var message_2 = { module_2:  { radon: [ '00.00' ],   co2: [ '00.00' ], methane: [ '00.00' ] } };
 
 io.on('connection', function(socket) {
   console.log('Alguien se ha conectado con Sockets');
+  socket.emit('messages', message_1);
+  socket.emit('messages', message_2);
 });
 
 app.post('/', function (req, res) {
