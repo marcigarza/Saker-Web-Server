@@ -22,7 +22,6 @@ io.on('connection', function(socket) {
 });
 
 app.post('/', function (req, res) {
-  console.log(req.body);
   console.log("POST VEN A MI!")
   body = req.body;
   io.sockets.emit('messages', body);
