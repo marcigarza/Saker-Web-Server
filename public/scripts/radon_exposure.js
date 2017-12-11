@@ -34,7 +34,7 @@ var gender_affectance = (gender == 1)?0.11:0.03;
 
 var radon_sensitivity = smoke_affectance + age_affectance + gender_affectance + 1;
 console.log(radon_sensitivity);
-document.getElementById("smoke_selection").innerHTML = radon_sensitivity;
+document.getElementById("smoke_selection").innerHTML = radon_sensitivity.toString();
 
 
 	
