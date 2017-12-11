@@ -4,13 +4,13 @@ var el = document.getElementById("u923_img");
 
 console.log(last);
 if (last == 1) {
-	el.src = "../Alice-35y-Smoke.gif";
+	el.src = "../GIFS/Alice-35y-Smoke.gif";
 } else if (last == 2) {
-	el.src = "../Gema-30y-Non.gif";
+	el.src = "../GIFS/Gema-30y-Non.gif";
 } else if (last == 3) {
-	el.src = "../Hans-65y-Non.gif";
+	el.src = "../GIFS/Hans-65y-Non.gif";
 } else if (last == 4) {
-	el.src = "../Ricky-55y-Smoke.gif";;
+	el.src = "../GIFS/Ricky-55y-Smoke.gif";;
 } else {
 	el.src = " ";
 }
