@@ -40,18 +40,75 @@ document.getElementById("u758").innerHTML = radon_sensitivity;
 	
 var e = document.getElementById("u782_img");
 
-if(smoker_status == 3 && age_group ==1) {
-	//non_smoker and less than 50
-	e.src = "Gema-30y-Non.gif";
-} else if (smoker_status == 3 && (age_group==2 || age_group==3)) {
-	//non_smoker and more than 50
-	e.src = "Hans-65y-Non.gif";
-} else if ((smoker_status==1 || smoker_status == 2) && age_group==1) {
-	//smoker and less than 50
-	e.src = "Alice-35y-Smoke.gif";
-} else {
-	//smoker and more than 50
-	e.src = "Ricky-55y-Smoke.gif";
+if(gender == 1) {
+	if(age_group == 1) {
+		if(smoker_status == 1) {
+			e.src = "../SensitivityGraph/M20Y.png";
+		}	
+		else if (smoker_status == 2) {
+			e.src = "../SensitivityGraph/M20E.png";
+		}
+		else {
+			e.src = "../SensitivityGraph/M20N.png";
+		}
+	} 
+	else if (age_group == 2) {
+		if(smoker_status == 1) {
+			e.src = "../SensitivityGraph/M60Y.png";
+		}	
+		else if (smoker_status == 2) {
+			e.src = "../SensitivityGraph/M60E.png";
+		}
+		else {
+			e.src = "../SensitivityGraph/M60N.png";
+		}
+	} 
+	else {
+		if(smoker_status == 1) {
+			e.src = "../SensitivityGraph/M70Y.png";
+		}	
+		else if (smoker_status == 2) {
+			e.src = "../SensitivityGraph/M70E.png";
+		}
+		else {
+			e.src = "../SensitivityGraph/M70N.png";
+		}
+	}
+} 
+else {
+	if(age_group == 1) {
+		if(smoker_status == 1) {
+			e.src = "../SensitivityGraph/F20Y.png";
+		}	
+		else if (smoker_status == 2) {
+			e.src = "../SensitivityGraph/F20E.png";
+		}
+		else {
+			e.src = "../SensitivityGraph/F20N.png";
+		}
+	} 
+	else if (age_group == 2) {
+		if(smoker_status == 1) {
+			e.src = "../SensitivityGraph/F60Y.png";
+		}	
+		else if (smoker_status == 2) {
+			e.src = "../SensitivityGraph/F60E.png";
+		}
+		else {
+			e.src = "../SensitivityGraph/F60N.png";
+		}
+	} 
+	else {
+		if(smoker_status == 1) {
+			e.src = "../SensitivityGraph/F70Y.png";
+		}	
+		else if (smoker_status == 2) {
+			e.src = "../SensitivityGraph/F70E.png";
+		}
+		else {
+			e.src = "../SensitivityGraph/F70N.png";
+		}
+	}
 }
 
 function smoker(data) {
