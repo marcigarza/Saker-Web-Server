@@ -14,7 +14,7 @@ var radon_value_module_2 = " ";
 var co2_value_module_2 = " ";
 var methane_value_module_2 = " ";
 
-var bq = " bq/m3";
+var bq = " Bq/m3";
 var ppm = " ppm";
 
 socket.on('messages', function(data) {
