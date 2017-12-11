@@ -1,11 +1,13 @@
 console.log(localStorage.getItem("smoker_status"));
 console.log(localStorage.getItem("age_group"));
 console.log(localStorage.getItem("gender"));
+var smoker_status = 0;
+var age_group     = 0;
+var gender        = 0;
 
-
-var smoker_status = localStorage.getItem("smoker_status");
-var age_group = localStorage.getItem("age_group");
-var gender = localStorage.getItem("gender");
+smoker_status = localStorage.getItem("smoker_status");
+age_group = localStorage.getItem("age_group");
+gender = localStorage.getItem("gender");
 /*
 smoker_status: 
 				1. current smoker
@@ -25,12 +27,13 @@ render_sensitivity id : u758
 */
 
 
+
 var smoke_affectance  = smoker(smoker_status);
 var age_affectance    = age(age_group);
 var gender_affectance = (gender == 1)?0.11:0.03;
 
 var radon_sensitivity = smoke_affectance + age_affectance + gender_affectance + 1;
-
+console.log(radon_sensitivity);
 document.getElementById("smoke_selection").innerHTML = radon_sensitivity;
 
 
