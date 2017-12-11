@@ -31,9 +31,9 @@ var gender_affectance = (gender == 1)?0.11:0.03;
 
 var radon_sensitivity = smoke_affectance + age_affectance + gender_affectance + 1;
 
-document.getElementById("smoke_selection").innerHTMl = radon_sensitivity;
+document.getElementById("smoke_selection").innerHTML = radon_sensitivity;
 
-  
+
 	
 if(smoker_status == 3 & age_group ==1) {
 	//non_smoker and less than 50
