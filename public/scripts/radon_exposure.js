@@ -42,18 +42,14 @@ var e = document.getElementById("u782_img");
 
 if(smoker_status == 3 && age_group ==1) {
 	//non_smoker and less than 50
-	console.log("gema");
 	e.src = "Gema-30y-Non.gif";
 } else if (smoker_status == 3 && (age_group==2 || age_group==3)) {
 	//non_smoker and more than 50
-	console.log("hans");
 	e.src = "Hans-65y-Non.gif";
 } else if ((smoker_status==1 || smoker_status == 2) && age_group==1) {
 	//smoker and less than 50
-	console.log("alice");
 	e.src = "Alice-35y-Smoke.gif";
 } else {
-	console.log("ricky");
 	//smoker and more than 50
 	e.src = "Ricky-55y-Smoke.gif";
 }
