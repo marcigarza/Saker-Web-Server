@@ -42,16 +42,16 @@ var e = document.getElementById("u782_img");
 
 if(smoker_status == 3 & age_group ==1) {
 	//non_smoker and less than 50
-	e.src = "../images/Gema-30y-Non.gif";
+	e.src = "Gema-30y-Non.gif";
 } else if (smoker_status == 3 & (age_group==2 | age_group==3)) {
 	//non_smoker and more than 50
-	e.src = "../images/Hans-65y-Non.gif";
+	e.src = "Hans-65y-Non.gif";
 } else if ((smoker_status==1 | smoker_status == 2) & age_group==1) {
 	//smoker and less than 50
-	e.src = "../images/Alice-35y-Smoke.gif";
+	e.src = "Alice-35y-Smoke.gif";
 } else {
 	//smoker and more than 50
-	e.src = "../images/Ricky-55y-Smoke.gif";
+	e.src = "Ricky-55y-Smoke.gif";
 }
 
 function smoker(data) {
