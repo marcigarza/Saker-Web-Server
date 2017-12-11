@@ -16,8 +16,8 @@ function StoreData() {
 	localStorage.setItem("smoker_status", smoke_value);
 	localStorage.setItem("age_group", age_value);
 	localStorage.setItem("gender", gender_value);
-	console.log(age_value);
 	console.log(smoke_value);
+	console.log(age_value);
 	console.log(gender_value);
 	return returnStatus;
 }
