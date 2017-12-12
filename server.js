@@ -28,8 +28,11 @@ io.on('connection', function(socket) {
 app.post('/', function (req, res) {
   console.log("POST VEN A MI!");
   console.log(req.body);
+
+
   body = req.body;
   io.sockets.emit('messages', body);
+
   /*
   req.on('data', function (data) {
      body = querystring.parse(data);
@@ -43,8 +46,12 @@ app.post('/', function (req, res) {
     io.sockets.emit('messages', body);
   });
   */
+
+  res.send('POST RECEIVED');
+  /*
   res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('Hello World\n');
+  res.end('POST RECEIVED\n');
+  */
 });
 
 server.listen(PORT, function() {
