@@ -28,7 +28,8 @@ io.on('connection', function(socket) {
 app.post('/', function (req, res) {
   console.log("POST VEN A MI!");
   console.log(req.body);
-
+  if (JSON.stringify(req.body.module_1 != undefined)) message_1 = req.body;
+  else if (JSON.stringify(req.body.module_2 != undefined)) message_2 = req.body;
 
   body = req.body;
   io.sockets.emit('messages', body);
